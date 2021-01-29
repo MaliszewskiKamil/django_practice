@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Best Movies!</title>
+        <meta name="description" content="These are the best movies on the internet. Check if You know them all!" />
+        <meta name="keywords" content="films, movies, best films, top films, interesting films, interesting movies" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css"/>
+    </head>
+
+    <body>
+        <h1>Best movies on the internet!</h1>
+        <label>
+            Comedy: <br />
+            <a href="https://www.imdb.com/title/tt3042408/" target="_blank">
+                Who am I <br />
+                {% load static %}
+            <img src="{% static 'img/episode1/whoami.jpg' %}" alt="My image">
+            </a>
+
+        </label>
+    </body>
+</html>

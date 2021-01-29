@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body class={{alert}}>
+    <h1>Choose a poll to vote!</h1>
+        {% if latest_question_list %}
+    <ul>
+        {% for question in latest_question_list %}
+            <li>
+                <a href="{% url 'polls:vote' question.id %}">{{question.question_text}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are avaiable</p>
+{% endif %}
+    </body>
+</html>

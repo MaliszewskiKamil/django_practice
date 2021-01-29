@@ -1,0 +1,29 @@
+body{
+    background-color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+h1{
+    font-size: 48px;
+}
+
+img{
+    max-width: 500px;
+    max-height: 250px;
+}
+
+/* Not visited link */
+a:link{
+    color: yellow;
+}
+
+/* Vsited link */
+a:visited{
+    color: yellow;
+}
+
+/* hovered link */
+a:hover{
+    color: yellowgreen;
+}

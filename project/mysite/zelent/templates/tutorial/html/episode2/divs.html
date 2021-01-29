@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Best Movies!</title>
+        <meta name="description" content="These are the best movies on the internet. Check if You know them all!" />
+        <meta name="keywords" content="films, movies, best films, top films, interesting films, interesting movies" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/html2/div.css' %}" type="text/css"/>
+    </head>
+
+    <body>
+        <div id="container">
+
+            <div id="logo">
+                <h1> Best series, subjective TOP 5!</h1>
+            </div>
+
+            <div id="nav">
+                Mr Robot <br />
+                Breaking Bad <br />
+                Sherlock Holmes <br />
+                Dr. House <br />
+                Vampire's Dairy <br />
+            </div>
+
+            <div id="content">
+                Mr. Robot is an American drama thriller television series created by Sam Esmail for USA Network. It stars Rami Malek as Elliot Alderson, a cybersecurity engineer and hacker with social anxiety disorder and clinical depression. Elliot is recruited by an insurrectionary anarchist known as "Mr. Robot", played by Christian Slater, to join a group of hacktivists called "fsociety".[8] The group aims to destroy all debt records by encrypting the financial data of E Corp, the largest conglomerate in the world.
+                <br /><br />
+                The pilot premiered via online and video on demand services on May 27, 2015. The first season debuted on USA Network on June 24, 2015, and the second on July 13, 2016. The third season premiered on October 11, 2017. The fourth and final season premiered on October 6, 2019, and concluded on December 22, 2019.
+                <br /><br />
+                Mr. Robot has received critical acclaim, particularly for the performances of Malek and Slater, its story and visual presentation, and Mac Quayle's musical score. Esmail has received praise for his direction of the series, having directed three episodes in the first season before serving as the sole director for the remainder of the show. The show received numerous accolades, including two Golden Globe Awards, two Primetime Emmy Awards, and a Peabody Award. 
+            </div>
+
+            <div id="ad">
+                {% load static %}
+                <img src="{% static 'img/episode1/whoami.jpg' %}" id=ad_img/>
+            </div>
+
+            <div id="footer">
+                All rights reserved! 2021
+            </div>
+
+        </div>
+    </body>
+</html>
