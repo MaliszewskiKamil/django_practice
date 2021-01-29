@@ -19,6 +19,10 @@ def vote(request):
     movies = get_list_or_404(Movie)
     for movie in movies:
         selected_char = movie.character_set.get(pk=request.POST[movie.title])
+        print(selected_char)
+        print(selected_char)
+        print(selected_char)
+        print(selected_char)
         selected_char.votes += 1
         selected_char.save()
     return HttpResponse('charpicker:results')

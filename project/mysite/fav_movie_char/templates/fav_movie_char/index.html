@@ -7,21 +7,17 @@
     <body>
         <h1>INDEX PAGE</h1>
         {% if movies_list %}
-        <form action="% url 'charpicker:vote' movies_list.id %" method="post">
-        {% csrf_token %}
-            <ul>
+        <form action="{% url 'charpicker:vote' %}" method="post">
                 {% for movie in movies_list %}
-                <li>
-                    <label>
+                {% csrf_token %}
+                <fieldset>
                         {{movie.title}} <br /> 
-                        {% for char in movie.character_set.all %}
+                        {% for choice in movie.character_set.all %}
                             <input type="radio" name="{{ movie.title }}" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
-                            <ol for="choice{{ forloop.counter }}">{{char.char_name}}</ol> 
-                    </label>    
-                    {% endfor %}
-                </li>
+                            <label for="choice{{ forloop.counter }}">{{char.char_name}}</label> 
+                        {% endfor %}
+                </fieldset>
                 {% endfor %}
-            </ul>
             <input type="submit" value="Vote">
         </form>
         {% else %}
