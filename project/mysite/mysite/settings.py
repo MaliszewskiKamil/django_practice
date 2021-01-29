@@ -49,6 +49,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
     'zelent.apps.ZelentConfig',
+    'fav_movie_char.apps.FavMovieCharConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
