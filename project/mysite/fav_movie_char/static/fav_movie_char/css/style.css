@@ -48,3 +48,7 @@ body{
 .film{
     border-bottom:solid;
 }
+
+.results{
+    font-size: 32px;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'fav_movie_char/css/style.css' %}" />
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>RESULTS</h1>
+            {% if characters_list %}
+                {% for char in characters_list %}
+                    <p class="results"> {{forloop.counter}}. {{ char.char_name }}: {{ char.votes }}</p>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </body>
+</html>

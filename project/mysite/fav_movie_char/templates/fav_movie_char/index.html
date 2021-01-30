@@ -9,7 +9,7 @@
         <div id="container">
             <h1>CHOOSE YOUR FAVOURITE CHARACTERS</h1>
             {% if movies_list %}
-            <form action="{% url 'charpicker:vote' %}" method="post">
+            <form action="{% url 'fav_movie_char:vote' %}" method="post">
                 {% for movie in movies_list %}
                 <div class="film">
                     {% csrf_token %}
