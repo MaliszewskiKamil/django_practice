@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'fav_movie_char/css/style.css' %}" />
     </head>
 
     <body>
-        <h1>INDEX PAGE</h1>
-        {% if movies_list %}
-        <form action="{% url 'charpicker:vote' %}" method="post">
+        <div id="container">
+            <h1>CHOOSE YOUR FAVOURITE CHARACTERS</h1>
+            {% if movies_list %}
+            <form action="{% url 'charpicker:vote' %}" method="post">
                 {% for movie in movies_list %}
-                {% csrf_token %}
-                <fieldset>
-                        {{movie.title}} <br /> 
-                        {% for choice in movie.character_set.all %}
-                            <input type="radio" name="{{ movie.title }}" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
-                            <label for="choice{{ forloop.counter }}">{{char.char_name}}</label> 
-                        {% endfor %}
-                </fieldset>
-                {% endfor %}
-            <input type="submit" value="Vote">
-        </form>
+                <div class="film">
+                    {% csrf_token %}
+                    <ol class="title">{{movie.title}}</ol><br /> 
+                        <div class="characters">
+                            {% for choice in movie.character_set.all %}
+                            <il>
+                                <input type="radio" name="{{ movie.title }}" id="choice{{ choice.id }}" value="{{ choice.id }}"> 
+                                <label for="choice{{ choice.id }}">{{choice.char_name}}</label> 
+                            </il>
+                            {% endfor %}
+                        </div>
+                </div>
+                    {% endfor %}
+                    <br />
+                <div id="divButtonVote">
+                    <input id=buttonVote type="submit" value="Vote">
+                </div>
+            </form>
+        </div>
         {% else %}
         <p>No movie on list</p>
 
