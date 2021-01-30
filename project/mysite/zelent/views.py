@@ -22,3 +22,6 @@ def html2(request):
 
 def css2(request):
     return render(request, 'tutorial/css/css2/index.html')
+
+def html3(request):
+    return render(request, 'tutorial/html/episode3/index.html')
