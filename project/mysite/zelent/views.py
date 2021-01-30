@@ -25,3 +25,15 @@ def css2(request):
 
 def html3(request):
     return render(request, 'tutorial/html/episode3/index.html')
+
+def html3WhoAmI(request):
+    return render(request, 'tutorial/html/episode3/whoami.html')
+
+def html3Offer(request):
+    return render(request, 'tutorial/html/episode3/offer.html')
+
+def html3Contact(request):
+    return render(request, 'tutorial/html/episode3/contact.html')
+
+def html3Cv(request):
+    return render(request, 'tutorial/html/episode3/cv.html')

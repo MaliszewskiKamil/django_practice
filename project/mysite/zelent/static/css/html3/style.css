@@ -69,9 +69,11 @@ body{
 
 #tile5{
     margin: 10px;
-    width: 480px;
-    height: 304px;
+    width: 420px;
+    height: 244px;
     background-color: #666666;
+    text-align: justify;
+    padding: 30px;
 }
 
 .tileSocial{
@@ -108,4 +110,23 @@ body{
 }
 #footer{
     text-align: center;
+}
+a.tilelink{
+    color: white;
+    text-decoration: none;
+    display: block;
+    height: 132px;
+    width: 230px;
+}
+
+a.sociallink{
+    color: white;
+    text-decoration: none;
+    display: block;
+    height: 142px;
+    width: 105px;
+}
+a.link{
+    color: white;
+    text-decoration: none;
 }
