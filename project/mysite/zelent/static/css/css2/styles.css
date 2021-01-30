@@ -55,15 +55,32 @@ body{
 }
 
 #sidebar{
-    clear: both;
+    float: left;
+    width: 128px;
+    min-height: 844px;
+    padding: 20px;
+    background-color: lightgray;
+    text-align: center;
+    font-size: 18px;
+    border-right: 2px dotted #666;
 }
 
 #content{
     float: left;
+    padding: 40px;
+    width: 750px;
+    background-color: #dedede;
+    min-height: 580px;
+    text-align: justify;
 }
 
 #footer{
     clear: both;
+    color:white;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    background-color: #202020;
 }
 
 .option{
@@ -78,4 +95,28 @@ body{
 .option:hover{
     background-color: #404040;
     cursor: pointer;
+}
+.optionL{
+    font-size: 16px;
+    height: 25px;
+    padding: 10px;
+    border-bottom: 2px dotted #444;
+}
+.optionL:hover{
+    background-color: #f36742;
+    color: white;
+    cursor: pointer;
+}
+
+.bigtitle{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.dottedLine{
+    height: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px dotted #444444;
 }
