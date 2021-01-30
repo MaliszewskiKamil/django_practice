@@ -8,9 +8,6 @@ App should:
 
 Example Usage:
 python manage.py shell
-Python 3.8.3 (default, Jul  2 2020, 16:21:59)
-Type 'copyright', 'credits' or 'license' for more information
-IPython 7.16.1 -- An enhanced Interactive Python. Type '?' for help.
 
 In [1]: from fav_movie_char.models import Movie, Character
 
