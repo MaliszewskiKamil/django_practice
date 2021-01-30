@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
         <meta charset="utf-8" />
@@ -8,11 +9,72 @@
 
         <meta name="description" content="I can make Your www website! Hire an web developer: Django, Flask, HTML, CSS, MySQL" />
         <meta name="keywords" content="hire, order, programmer, portfolio, create website, django, flask, html, css, mysql, portfolio" />
-        {% load static %}
-        <link rel="stylesheet" href="{% static 'html3/style.css' %}" type="text/css"/>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="{% static 'css/html3/style.css' %}" type='text/css'/>
+        <link rel="stylesheet" href="{% static 'css/fontello/css/fontello.css' %}" type='text/css'/>
     </head>
 
     <body>
+
+        <div id="container">
+
+            <div class="rectangle">
+                <div id="logo">Kamil Maliszewski</div>
+                <div style="clear: both;"></div>
+            </div>
+
+            <div class="square">
+                <div class="tile">
+                    <i class="icon-user"></i> <br />Who am I?
+                </div>
+                <div class="tile">
+                    <i class="icon-laptop"></i> <br />My offer
+                </div>
+                <div style="clear: both;"></div>
+
+                <div class="tile" id="tile2">
+                    <i class="icon-graduation-cap"></i> <br />Curriculum Vitae
+                </div>
+                <div class="tile" id="tile3">
+                    <i class="icon-mail"></i> <br />Contact
+                </div>
+                <div style="clear: both;"></div>
+
+                <div class="tile" id="tile4">
+                    <i>Talk is cheap. Show me the code!</i><br />~Linus Torvalds, creator of Linux
+                </div>
+            </div>
+            <div class="square">
+
+                <div class="tile" id="tile5">
+                    Title <br /> <br />
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean mattis leo non ullamcorper cursus. Ut in mi sed leo pretium bibendum sed in urna. Mauris turpis lacus, sollicitudin a mollis non, hendrerit ac neque. Mauris vulputate ligula a tellus aliquam euismod. Phasellus ligula augue, facilisis ut eros vitae, cursus luctus enim. Fusce ut sem sodales, gravida turpis et, iaculis purus. Donec eu diam vel leo malesuada eleifend. Nunc varius libero in commodo efficitur. Donec pretium, dui eu feugiat volutpat, est nulla pellentesque ante, id aliquam est risus at tellus. Phasellus interdum sagittis risus sit amet posuere. Fusce sit amet pharetra augue, cursus suscipit lectus. In hac habitasse platea dictumst. Etiam interdum dictum neque, et consequat lorem tempor quis. Aliquam malesuada ipsum eu sodales vulputate.
+                </div>
+                <div class="tileSocial" id="tileFb">
+                    <i class="icon-facebook"></i>
+                </div>
+                <div class="tileSocial" id="tileLin">
+                    <i class="icon-linkedin-squared"></i>
+                </div>
+                <div class="tileSocial" id="tileYt">
+                    <i class="icon-youtube"></i>
+                </div>
+                <div class="tileSocial" id="tileTw">
+                    <i class="icon-twitter"></i> 
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+            <div style="clear: both;"></div>
+
+            <div class="rectangle">
+                <div id="footer">
+                    &copy; Kamil Maliszewski - Portfolio. Web Developer invites You to cooperation! Contact me via e-mail: <i class="icon-mail-alt"></i>kamil.maliszewski@gmail.com
+                </div>
+            </div>
+        </div>
 
     </body>
 </html>
