@@ -19,3 +19,6 @@ def html1(request):
 def html2(request):
     context = {}
     return render(request, 'tutorial/html/episode2/divs.html')
+
+def css2(request):
+    return render(request, 'tutorial/css/css2/index.html')
