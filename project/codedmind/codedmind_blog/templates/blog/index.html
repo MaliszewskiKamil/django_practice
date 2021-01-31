@@ -1,10 +1,29 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
+        <title>Code Passion!</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
 
     </head>
 
     <body>
-        
+
+        <div id="container">
+            <div id="header">
+                <img src="{% static 'img/logo.png' %}" style="float: left;" width="25px" height="25px"/>
+                <div id="logo"><span style="color: #20C20E;">coded</span>mind.com</div>
+                <div id="nav_items">
+                    <ol>
+                        <li><a href="#">front-end</a></li>
+                        <li><a href="#">back-end</a></li>
+                        <li><a href="#">python</a></li>
+                        <li><a href="#">math</a></li>
+                        <div style="clear: both;"></div>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
