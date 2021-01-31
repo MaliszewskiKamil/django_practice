@@ -1,6 +1,7 @@
 body{
     background-color: whitesmoke;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
 }
 
 #container{
@@ -8,7 +9,6 @@ body{
 }
 
 #header{
-    width: 100%;
     background-color: #101010;
     color: white;
     font-size: 24px;
@@ -25,6 +25,78 @@ body{
     margin-left: auto;
     text-align: right;
 }
+#header_image{
+    height: 300px;
+    overflow: hidden;
+    padding-top: 1px;
+}
+
+#wrapper{
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content{
+    float: left;
+    width: 980px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#side_panel{
+    margin-top: 101px;
+    float: left;
+    padding: 10px;
+    width: 280px;
+    height: 500px;
+    background-color: #e4e4e4;
+}
+#about_me{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: justify;
+}
+#about_me h2{
+    text-align: center;
+}
+
+#social_container{
+    padding-top: 10px;
+}
+
+.social_icon{
+    float: left;
+    width: 130px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 50%;
+}
+#icon_fb:hover{
+    background-color: #4267b2;
+}
+
+
+
+.blog_post{
+    padding-right: 20px;
+    width: 940px;
+    height: 200px;
+    border: 1px solid black;
+    border: 2px solid black;
+}
+.div_thumbnail{
+    margin: 10px;
+    height: 180px;
+    width: 180px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    float: left;
+}
+
+
+
+
 
 ol {
     padding: 0;
@@ -48,9 +120,11 @@ ol > li a{
 }
 ol > li a:hover{
     text-decoration: none;
-    color: white;
+    color: #007009;
     background-color: #909090;
 }
+
+
 
 
 

@@ -4,6 +4,7 @@
     <head>
         <title>Code Passion!</title>
         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'css/fontello/css/fontello.css' %}" />
 
     </head>
 
@@ -11,7 +12,6 @@
 
         <div id="container">
             <div id="header">
-                <img src="{% static 'img/logo.png' %}" style="float: left;" width="25px" height="25px"/>
                 <div id="logo"><span style="color: #20C20E;">coded</span>mind.com</div>
                 <div id="nav_items">
                     <ol>
@@ -23,6 +23,55 @@
                     </ol>
                 </div>
             </div>
+
+            <div id="header_image">
+                <img id="header_cropped" src="{% static 'img/header_img.png' %}" />
+            </div>
+
+            <div id="wrapper">
+
+                <div id="content">
+                    <h1>Recent blog posts:</h1>
+
+                    <article class="blog_post">
+                        <div class="div_thumbnail">
+                            <img class="thumbnail" src="{% static 'img/header_img.png' %}"></img>
+                        </div>
+                        
+                    </article>
+                    
+                </div>
+
+                <div id=side_panel>
+
+                    <div id="about_me">
+                        <h2>Hello!</h2>
+                        <p>I'm Kamil. I am a here to share my knowledge and help You get started with web development!<br />I hope the information You find here will be helpful, enjoy! </p>
+                    </div>
+                    <div id="social_container">
+                        <h2 style="text-align: center;">Check out my socials!</h2>
+                        <div class="social_container">
+                            <div class="social_icon" id="icon_fb"><i class="icon-facebook"></i></div>
+                        </div>
+                        <div class="social_container">
+                            <div class="social_icon" id="icon_tw"><i class="icon-twitter"></i></div>
+                        </div>
+                        <div style="clear:both;" ></div>
+                        <div class="social_container">
+                            <div class="social_icon" id="icon_ln"><i class="icon-linkedin-squared"></i></div>
+                        </div>
+                        <div class="social_container">
+                            <div class="social_icon" id="icon_yt"><i class="icon-youtube"></i></div>
+                        </div>
+                        <div style="clear:both;"></div>
+                    </div>
+                
+                </div>
+
+                <div style="clear:both;"></div>
+
+            </div>
+
         </div>
 
     </body>
