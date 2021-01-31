@@ -14,4 +14,5 @@ urlpatterns = [
     path('html3/offer', views.html3Offer, name='offer'),
     path('html3/contact', views.html3Contact, name='contact'),
     path('html3/cv', views.html3Cv, name='cv'),
+    path('css3/', views.css3, name='css3')
 ]
