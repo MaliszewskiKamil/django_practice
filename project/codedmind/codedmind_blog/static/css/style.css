@@ -25,6 +25,7 @@ body{
     margin-left: auto;
     text-align: right;
 }
+
 #header_image{
     height: 300px;
     overflow: hidden;
@@ -52,11 +53,13 @@ body{
     height: 500px;
     background-color: #e4e4e4;
 }
+
 #about_me{
     border: 1px solid black;
     padding: 10px;
     text-align: justify;
 }
+
 #about_me h2{
     text-align: center;
 }
@@ -65,18 +68,18 @@ body{
     padding-top: 10px;
 }
 
+
+
 .social_icon{
     float: left;
     width: 130px;
     text-align: center;
     padding: 5px;
-    border-radius: 50%;
 }
+
 #icon_fb:hover{
     background-color: #4267b2;
 }
-
-
 
 .blog_post{
     padding-right: 20px;
@@ -93,9 +96,6 @@ body{
     background-color: whitesmoke;
     float: left;
 }
-
-
-
 
 
 ol {
@@ -124,6 +124,13 @@ ol > li a:hover{
     background-color: #909090;
 }
 
+.description{
+    max-width: 740px;
+    max-height: 100px;
+    text-align: justify;
+    overflow: hidden;
+
+}
 
 
 
