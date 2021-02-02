@@ -87,7 +87,13 @@ body{
     height: 200px;
     border: 1px solid black;
     border: 2px solid black;
+    transition: all 0.2s ease-in-out;
 }
+.blog_post:hover{
+    transform: scale(1.01);
+    background-color: rgb(225, 225, 225);
+}
+
 .div_thumbnail{
     margin: 10px;
     height: 180px;
@@ -129,7 +135,6 @@ ol > li a:hover{
     max-height: 100px;
     text-align: justify;
     overflow: hidden;
-
 }
 
 
