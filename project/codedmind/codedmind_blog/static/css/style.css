@@ -82,6 +82,8 @@ body{
 }
 
 .blog_post{
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding-right: 20px;
     width: 940px;
     height: 200px;
@@ -98,9 +100,18 @@ body{
     margin: 10px;
     height: 180px;
     width: 180px;
-    overflow: hidden;
     background-color: whitesmoke;
     float: left;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.thumbnail{
+    
+    object-fit: cover;
+    height: 180px;
+    width: 180px;
 }
 
 
@@ -126,8 +137,8 @@ ol > li a{
 }
 ol > li a:hover{
     text-decoration: none;
-    color: #007009;
-    background-color: #909090;
+    color: white;
+    background-color: #505050;
 }
 
 .description{

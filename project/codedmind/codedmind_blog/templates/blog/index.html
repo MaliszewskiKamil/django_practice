@@ -32,21 +32,28 @@
 
                 <div id="content">
                     <h1>Recent blog posts:</h1>
+                    {% if article_list %}
+                   {% for article in article_list %} 
+
 
                     <article class="blog_post">
+
+
                             <figure class="div_thumbnail">
-                                <img class="thumbnail" src="{% static 'img/header_img.png' %}"></img>
-                                <figcaption>Article thumbnail</figcaption>
+                                <img class="thumbnail" src={{article.img_path}}></img>
                             </figure>
 
                             <article style="float: left;">
-                                <header><h2 class="blog_title">Learn python by doing! Part 1</h2></header>
-                                <p class="description"><i>Hello this is article is an introduction to the upcomming python course. In this part we will prepare the environment, go through installation and write our first code. Prepare for the journey, because we will learn by doing! Practice, practice, practice. Enjoy! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu viverra magna, id hendrerit sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed diam felis, congue at dignissim id, pulvinar sit amet sem. Maecenas eget lacus dolor. Vestibulum volutpat vulputate odio, et hendrerit felis auctor vel. Quisque euismod purus at lacus vehicula efficitur. Mauris lobortis sapien et ante auctor pulvinar. Nam nec leo et nisi ullamcorper dictum eu et justo. In id libero placerat, suscipit metus nec, ornare nulla.</i></p>
+
+                                <header><h2 class="blog_title"> {{article.title|striptags}}  </h2></header>
+                                <p class="description"><i> {{article.article|striptags}} </i></p>
                             </article>
                             <div style="clear: both;"></div>
                         
                     </article>
                     
+                   {% endfor %}
+                   {% endif %}
                 </div>
 
                 <div id=side_panel>
