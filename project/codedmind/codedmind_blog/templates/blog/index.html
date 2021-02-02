@@ -32,24 +32,21 @@
 
                 <div id="content">
                     <h1>Recent blog posts:</h1>
-                    {% if article_list %}
+                   {% if article_list %}
                    {% for article in article_list %} 
 
 
                     <article class="blog_post">
+                        <figure class="div_thumbnail">
+                            <img class="thumbnail" src={{article.img_path}}></img>
+                        </figure>
 
+                        <article style="float: left;">
+                            <header><h2 class="blog_title"> {{article.title|striptags}}  </h2></header>
+                            <p class="description"><i> {{article.article|striptags}} </i></p>
+                        </article>
 
-                            <figure class="div_thumbnail">
-                                <img class="thumbnail" src={{article.img_path}}></img>
-                            </figure>
-
-                            <article style="float: left;">
-
-                                <header><h2 class="blog_title"> {{article.title|striptags}}  </h2></header>
-                                <p class="description"><i> {{article.article|striptags}} </i></p>
-                            </article>
-                            <div style="clear: both;"></div>
-                        
+                        <div style="clear: both;"></div>
                     </article>
                     
                    {% endfor %}
