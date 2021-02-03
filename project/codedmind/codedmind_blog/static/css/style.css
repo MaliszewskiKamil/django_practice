@@ -81,6 +81,15 @@ body{
     background-color: #4267b2;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+article > a{
+    color: black
+}
+
 .blog_post{
     margin-top: 10px;
     margin-bottom: 10px;

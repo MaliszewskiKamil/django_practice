@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 {% load static %}
 <html>
@@ -12,7 +13,6 @@
 
         <div id="container">
             <div id="header">
-
                 <div id="logo"><a href="{% url 'blog:index' %}"><span style="color: #20C20E;">coded</span>mind.com</a></div>
                 <div id="nav_items">
                     <ol>
@@ -33,12 +33,13 @@
 
                 <div id="content">
                     <h1>Recent blog posts:</h1>
+                    <h1> {{article.title}}</h1>
+                   {{article.article|safe}}  
                    {% if article_list %}
                    {% for article in article_list %} 
 
 
                     <article class="blog_post">
-                        <a href="{% url 'blog:article_detail' article.id %}">
                         <figure class="div_thumbnail">
                             <img class="thumbnail" src={{article.img_path}}></img>
                         </figure>
@@ -49,7 +50,6 @@
                         </article>
 
                         <div style="clear: both;"></div>
-                        </a>
                     </article>
                     
                    {% endfor %}

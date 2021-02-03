@@ -12,7 +12,6 @@
 
         <div id="container">
             <div id="header">
-
                 <div id="logo"><a href="{% url 'blog:index' %}"><span style="color: #20C20E;">coded</span>mind.com</a></div>
                 <div id="nav_items">
                     <ol>
@@ -32,28 +31,17 @@
             <div id="wrapper">
 
                 <div id="content">
-                    <h1>Recent blog posts:</h1>
-                   {% if article_list %}
-                   {% for article in article_list %} 
+                    <h1>Create blog post:</h1>
 
+                    <form action="{% url 'blog:article_created' %}">
+                        {% csrf_token %}
+                        <input type="text" name="title" id="title" value="hehe" />
+                        <input type="text" name="img_path" id="img_path" value="hehe" />
+                        <input type="text" name="article" id="article" value="hehe" />
+                        <input type="submit" value="Create Article" />
 
-                    <article class="blog_post">
-                        <a href="{% url 'blog:article_detail' article.id %}">
-                        <figure class="div_thumbnail">
-                            <img class="thumbnail" src={{article.img_path}}></img>
-                        </figure>
+                    </form>
 
-                        <article style="float: left;">
-                            <header><h2 class="blog_title"> {{article.title|striptags}}  </h2></header>
-                            <p class="description"><i> {{article.article|striptags}} </i></p>
-                        </article>
-
-                        <div style="clear: both;"></div>
-                        </a>
-                    </article>
-                    
-                   {% endfor %}
-                   {% endif %}
                 </div>
 
                 <div id=side_panel>
